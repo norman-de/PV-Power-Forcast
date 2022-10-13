@@ -16,7 +16,7 @@ See the 'cloudcover.js' example for the basics of calculating performance using 
 
 ## Graphical representation of the values
 
-It is extremely helpful to plot the values graphically to make optimizations or detect errors. My recommendation is to either use existing tools or create an svg with https://echarts.apache.org/.
+It is extremely helpful to plot the values graphically to make optimizations or detect errors. My recommendation is to either use existing tools or create an svg with <https://echarts.apache.org/>.
 
 ## Node-Red / MQTT / Wordpress
 
@@ -24,4 +24,4 @@ I use a combination of different tools to display the graphics on my website in 
 Node-Red retrieves the data from meteoblue. I use selected short term models from the MultiModel forecast for the current day and others for a 3 day forecast. The advantage of the MultiModel forecast is that I can choose the best fitting models for the region. In short and long term. Then a graph is rendered with the node-red-contrib-echarts node which is sent via MQTT.
 In Wordpress I use the plugin 'DIOT SCADA with MQTT' to include the SVG file in real time. For this my MQTT broker has a read-only public area and a letscrypt SSL certificate. So it can display the data on my HTTPS secured wordpress site.
 
-<img src="./example.svg">
+![SVG example](./example.svg)
